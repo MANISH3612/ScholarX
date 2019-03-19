@@ -1,0 +1,17 @@
+CREATE Database scholarx;
+
+CREATE TABLE user
+(
+    Email varchar(15) PRIMARY KEY,
+    Password varchar(15),
+    Video1 int(1) not null DEFAULT 0,
+    Video2 int(1) not null DEFAULT 0,
+    Video3 int(1) not null DEFAULT 0,
+    Video4 int(1) not null DEFAULT 0,
+    Video5 int(1) not null DEFAULT 0
+);
+
+# Video{1-5} has default value of 0.
+# 1 - indicates deleted for the user.
+# 2 - indicates red border.
+# other values - considered for default case.
